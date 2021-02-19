@@ -1,0 +1,111 @@
+<html>
+<head>
+	<title>| SKINCARE ROUTINE |</title> 
+
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<style>
+.mySlides2 {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0;}
+</style>
+</head>
+
+  <link  href='style.css' rel="stylesheet" >
+<ul >
+  <li><a href='home.html' target="_blank">Home </a></li>
+
+  <li><a href= "" target="_blank">Menu </a>
+        <ul> 
+       <li><a <link href= 'skintype.html' target="_blank"> KNOW YOUR SKIN </a></li>
+       <li><a href= 'beginnerGuide.html' target="_blank"> BEGINNERS GUIDE </a></li>
+       <li><a href= 'routine.html' target="_blank"> SKINCARE ROUTINE </a></li>
+      </ul>
+  </li>
+
+  <li><a href= 'references.html'target="_blank">Read More </a>
+      <li><a href= 'tips.html' target="_blank"> Extra Tips </a></li>
+    </ul><br><br>
+
+	  <img src="routine3.png" style="width:60%">
+
+
+	  <body background="pastel.jpeg">
+<frameset cols= "100%" >
+	<center>
+  <frame src="frame_a.html"></frame> </frameset>
+<br>
+<br>
+
+<p class="center" ><font size="6" face="verdana" color="black"><b>SKINCARE ROUTINE | DAILY</b></font><br><br>
+<img src="routine4.png" style="width:40%"><br><font size="4" face="verdana" color="black"><br>First of all, you need to know your skin type.How to know your skin type? =><a <link href= 'skintype.html' target ="bottom"> Know your skin type here.</a><br><br>
+	You also can read why we need to apply those thing. => <a <link href= 'beginnerGuide.html' target ="bottom"> Know why our skin need a routine.</a><br><br>
+	If you are oily, you have oily skin.<br>
+If you feel dry / tight, you have dry skin.<br>
+If the t-zone is greasy, the other is dry / normal, you have a combination skin.<br>
+If you feel normal, you have normal skin.<br><br>
+<b>1.Oil-based cleanser</b><br>
+	For the evening, select an oil based cleanser to start with as this will work to remove oil- based makeup and impurities from the skin.<br><br>
+<b>2.Tone</b><br>
+    To tone or not to tone? It’s a personal preference but we like to sweep a soaked cotton pad across skin to help remove excess oils and dead skin cells (and to keep our skin feeling happy!). It’s great to help pep up and refresh skin especially if yours includes ingredients like Witch Hazel (to help tighten pores) and calming Chamomile. Running short on time? Save this step for the evening to remove any last traces of make-up at the end of the day.<br><br>
+<b>3.Acne Spot</b><br>
+    <br>Spot treatments were created to do just that — treat a specific blemish or area of the skin. There are a variety of spot treatments that can be effective, depending on the type of pimple and your skin type. While a spot treatment can be a very regular part of an acne-focused skincare regimen, there are some specific occasions where it can be especially useful.<br>
+<b>4.Eyecream</b><br>
+    <br>Eye creams are specifically formulated to be used in the eye area, making them safer and more beneficial. ... Preventing signs of aging starts with using eye cream on the delicate skin around the eyes. Preventing Later (or Further) Damage. One of the first signs of aging is puffiness, sagging and wrinkles around the eyes.<br>
+<b>5.Moisturize</b><br>
+A moisturiser - you guessed it - will help protect your skin from losing moisture (keeping it feeling supple and plump!). A not-so-great moisturiser? Will likely leave skin still feeling tight and dry, and breakouts can happen as your skin tries to adjust. Look out for ingredients like Vitamin E, Glycerin, Pro-Vitamin B5, and Borage Seed Oil, which are all great moisturisers for your skin. We like to warm up our moisturiser between palms before applying – it smooths on a treat!
+    <br><br>
+</font></p>
+<br>
+<br>
+
+<center>
+<div  class="w3-content w3-display-container" style="max-width:900px" align="center">
+  <img class="mySlides2" src="1stHeader.png" style="width:100%">
+  <img class="mySlides2" src="2ndHeader.png" style="width:100%">
+  <img class="mySlides2" src="3rdHeader.png" style="width:100%">
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(3)"></span>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides2");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+</center>
+<br>
+<br>
+
+
+</center>
+</frameset>
+</body>
+</html>

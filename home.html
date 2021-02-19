@@ -1,0 +1,173 @@
+<html>
+<head>
+	<title>| HOME |</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides,{display:none;}
+</style>
+<style>
+.mySlides2 {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0;}
+</style>
+
+</head>
+
+
+ <link  href='style.css' rel="stylesheet" >
+<ul >
+	<li><a href='home.html' target="_blank">Home </a></li>
+
+	<li><a href= "" target="_blank">Menu </a>
+        <ul> 
+     	 <li><a <link href= 'skintype.html' target="_blank"> KNOW YOUR SKIN </a></li>
+     	 <li><a href= 'beginnerGuide.html' target="_blank"> BEGINNERS GUIDE </a></li>
+     	 <li><a href= 'routine.html' target="_blank"> SKINCARE ROUTINE </a></li>
+     	</ul>
+	</li>
+
+	<li><a href= 'references.html'target="_blank">Read More </a>
+      <li><a href= 'tips.html' target="_blank"> Extra Tips </a></li>
+	  </ul><br><br>
+
+  <center>
+<div class="w3-content w3-section" >
+  <img class="mySlides" src="header11.png" style="width:100%">
+  <img class="mySlides" src="header22.png" style="width:100%">
+  <img class="mySlides" src="header33.png" style="width:100%">
+  <img class="mySlides" src="header44.png" style="width:100%">
+  <img class="mySlides" src="header88.png" style="width:100%">
+  <img class="mySlides" src="header122.png" style="width:100%">
+  <img class="mySlides" src="header133.png" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</center>
+
+<body background="pastel.jpeg">
+<frameset cols= "100%" >
+	<center>
+  <frame src="frame_a.html"></frame> </frameset>
+
+</head>
+<body>
+​
+<table align=center class="dotted" border="2" >
+
+<form name="motivational_quotes" method="post" action="to_somewhere.asp">
+<tr>
+   <td><img src="tips1.jpg" width="330 height="260"></td>
+   <td><img src="tips4.jpg" width="330 height="260"></td>
+   <td><img src="tips2.jpg" width="330 height="260"></td>
+   <td><img src="tips3.jpg" width="330 height="260"></td>
+</tr>
+</table>
+</center>
+
+
+<p class="center">
+  <img  class="img1" src="pic2.png" width="330 height="260" ><font size="5" face="verdana" color="black"><i><b>WHY SKIN IS IMPORTANT?!</b></i></font><br><font size="4" face="verdana" color="black" >&nbsp; 0ur skin is the largest barrier against infection that we have. Keeping our skin healthy and moist helps keep this barrier strong.Moreover,skin is your body's largest organ. It serves as a protective barrier between your insides and the rest of the world, helps regulate body temperature and acts as a filter. Skin exists in a constant state of growth, with old cells dying as new cells are forming. It's affected by every aspect of your life, from what you eat to where you live. Healthy skin is better able to fight signs of aging, heals much faster and staves off potential disease better than unhealthy skin.</font> <br><br></p> <br><br>
+  <div class="container">
+  <img src="skin1.jpg" alt="Skin" width=95% ;">
+   <div class="text-block" align="center">
+    <p ><font color="Black" size=6 face="Georgia"><b>Care for your skin. Care for yourself. </b><br> </font> <font size=4 face="arial"> Beautiful skin requires commitment, not a miracle.<br>
+   <a href= "tips.html#oily_tips" target ="_blank">Oily Skin Tips </a>&nbsp;&nbsp;
+ <a href= "tips.html#dry_tips" target ="_blank">Dry Skin Tips</a></p></font>
+  </div>
+</div>
+
+<center>
+<div  class="w3-content w3-display-container" style="max-width:900px" align="center">
+  <img class="mySlides2" src="1stHeader.png" style="width:100%">
+  <img class="mySlides2" src="2ndHeader.png" style="width:100%">
+  <img class="mySlides2" src="3rdHeader.png" style="width:100%">
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(3)"></span>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides2");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+</center>
+<br>
+<br>
+<br>
+
+<div class="table1">
+<table align=center class="dotted" border="2" >
+<form name="motivational_quotes" method="post" >
+<tr>
+   <td><img src="last2.png" width="330 height="260"><font color="black" face="Georgia" ><p2 align=center ><br>&nbsp&nbsp&nbsp&nbsp<a href='skintype.html' class="button button3" target="_blank">Know your skin</a></p2></font></td>
+
+   <td><img src="last1.png" width="330 height="260"><font color="black" face="Georgia"><p2 align=center><br>&nbsp&nbsp&nbsp&nbsp<a href='beginnerGuide.html' class="button button3" target="_blank">Beginners Guide</a></p2></font></td>
+
+   <td><img src="last3.png" width="330 height="260"><font color="black" face="Georgia" ><p2 align=center ><br>&nbsp&nbsp&nbsp&nbsp<a href='routine.html' class="button button3" target="_blank">Skincare routine</a></p2></font></td>
+
+   <td><img src="last5.png" width="330 height="260"><font color="black" face="Georgia" ><p2 align=center>
+    <br>&nbsp&nbsp&nbsp&nbsp
+    <a href='tips.html' class="button button3" target="_blank" >Extra Tips!</a>
+  </p2></font></td>&nbsp&nbsp</p2></font></td>
+</tr>
+</table>
+</div>
+</center>
+
+<br>
+<br>
+
+
+</form>
+</body>
+</style>
+</center> 
+</body>
+</html>
